@@ -1,0 +1,26 @@
+{
+  "name": "portfoilio-gulp",
+  "version": "0.0.1",
+  "description": "Gulp build for my portfoilio.",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pdevx/portfolio.git"
+  },
+  "keywords": [
+    "node",
+    "angular",
+    "material",
+    "express"
+  ],
+  "license": "MIT"
+}
