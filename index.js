@@ -3,8 +3,10 @@ var app = express()
 
 app.set('port', (process.env.PORT || 5000));
 
+app.use(express.static(__dirname + '/app/.www/'))
+
 app.get('/', function (req, res) {
-  res.sendFile('app/.www/index.html');
+  res.sendFile('index.html', { root: __dirname + '/app/.www/' });
 })
 
 app.listen(app.get('port'), function() {
