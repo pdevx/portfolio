@@ -4,8 +4,7 @@ var app = express()
 app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function (req, res) {
-  res.send('Hey you guys');
-  // res.sendFile('app/.www/index.html');
+  res.sendFile('app/.www/index.html');
 })
 
 app.listen(app.get('port'), function() {
