@@ -63,7 +63,7 @@ pdevx.config(function (storeProvider) {
     storeProvider.setStore('localStorage');
 });
 
-pdevx.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+pdevx.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app', {
             url: '',
@@ -149,11 +149,6 @@ pdevx.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/about');
-
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
 });
 
 },{"angular":19,"angular-animate":3,"angular-cookies":7,"angular-material":11,"angular-material-icons":9,"angular-messages":13,"angular-storage":15,"angular-translate":16,"angular-ui-router":17}],2:[function(require,module,exports){

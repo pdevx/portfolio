@@ -62,7 +62,7 @@ pdevx.config(function (storeProvider) {
     storeProvider.setStore('localStorage');
 });
 
-pdevx.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+pdevx.config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app', {
             url: '',
@@ -148,9 +148,4 @@ pdevx.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
         
     // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/app/about');
-
-    $locationProvider.html5Mode({
-      enabled: true,
-      requireBase: false
-    });
 });
