@@ -1,4 +1,11 @@
 .md-whiteframe-z2
-    md-toolbar.site-toolbar 
-        h1.md-headline {{ "MUSIC" | translate | uppercase }}
     md-content
+        img(src="assets/img/music_cover.jpg", width="100%", height="auto")
+        img(src="assets/img/music_logo.png", width="100%", height="auto")
+        //- p.site-pad-left(layout-padding="") {{ "MUSIC_ABOUT" | translate }}
+    md-content(layout-wrap="", layout="row", layout-gt-sm="row")
+        div(ng-repeat="video in vm.youtubeVideos", flex-gt-sm="50", flex="100")
+            md-card
+                md-card-content
+                    .site-video
+                        iframe(ng-src="{{video.url | trusted}}", frameborder="0", allowfullscreen="")

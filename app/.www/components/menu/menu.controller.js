@@ -8,32 +8,32 @@ menuController.controller('menuController', function($mdMedia, $mdSidenav) {
     vm.menu = [{
             link: '#!/app/about',
             title: "ABOUT",
-            icon: 'dashboard'
+            icon: 'info_outlineskill'
         },
         {
             link: '#!/app/contact',
             title: "CONTACT",
-            icon: 'dashboard'
+            icon: 'chat'
         },
         {
             link: '#!/app/examples',
             title: "EXAMPLES",
-            icon: 'dashboard'
+            icon: 'code'
         },
         {
             link: '#!/app/experience',
             title: "EXPERIENCE",
-            icon: 'dashboard'
+            icon: 'business'
         },
         {
             link: '#!/app/music',
             title: "MUSIC",
-            icon: 'dashboard'
+            icon: 'music_note'
         },
         {
             link: '#!/app/youtube',
             title: "YOUTUBE",
-            icon: 'dashboard'
+            icon: 'tv'
         },
     ];
 

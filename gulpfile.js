@@ -157,7 +157,7 @@ gulp.task('build:img', function() {
     return gulp.src(['./app/assets/img/**/*'], {
             base: './app/assets/img'
         })
-        .pipe(gulp.dest('./app/.www/img'))
+        .pipe(gulp.dest('./app/.www/assets/img'))
         .pipe(browserSync.stream());
 });
 

@@ -1,4 +1,6 @@
 .md-whiteframe-z2
     md-toolbar.site-toolbar 
         h1.md-headline {{ "ABOUT" | translate | uppercase }}
-    md-content
+    md-content(layout="column", layout-padding="")
+        p {{ "ABOUT_TEXT" | translate }}
+        a(ng-repeat="link in vm.links", ng-href="{{ link }}", target="_blank") {{ link }}

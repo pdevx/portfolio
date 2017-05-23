@@ -1,6 +1,14 @@
 <div class="md-whiteframe-z2">
-    <md-toolbar class="site-toolbar">
-        <h1 class="md-headline">{{ "YOUTUBE" | translate | uppercase }}</h1>
-    </md-toolbar>
-    <md-content></md-content>
+    <md-content md-theme="dark"><img src="assets/img/youtube_cover.png" width="100%" height="auto" />
+        <p class="site-pad-left" layout-padding="">{{ "YOUTUBE_ABOUT" | translate }}</p>
+    </md-content>
+    <md-content layout-wrap="" layout="row" layout-gt-sm="row">
+        <div ng-repeat="video in vm.youtubeVideos" flex-gt-sm="50" flex="100">
+            <md-card>
+                <md-card-content>
+                    <div class="site-video"><iframe ng-src="{{video.url | trusted}}" frameborder="0" allowfullscreen=""></iframe></div>
+                </md-card-content>
+            </md-card>
+        </div>
+    </md-content>
 </div>

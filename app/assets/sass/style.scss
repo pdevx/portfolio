@@ -1,3 +1,150 @@
 .site-toolbar {
-    padding:0 1em;
+    padding: 0 1em;
+}
+
+.site-main-toolbar {
+    background: #f6f6f6 !important;
+    color: #424242 !important;
+    padding: 0 1em;
+}
+
+.site-main {
+    padding: 1em;
+}
+
+.site-sidenav {
+    background: #424242 !important;
+    color: #f6f6f6 !important;
+    a{
+        color: #f6f6f6;
+        text-decoration:none;
+    }
+    md-divider{
+         border-top-color: #f6f6f6 !important;
+    }
+    .md-subheader{
+        background: inherit;
+        color: inherit;
+    }
+    .md-toolbar-tools-bottom {
+    font-size: small;
+    }
+    .md-toolbar-tools-bottom :last-child {
+        opacity: 0.8;
+    }
+    ng-md-icon {
+        top:2px;
+        position: relative;
+        fill:#f6f6f6;
+    }
+}
+
+.site-menu-hover {
+    transition: background-color 0.5s ease;
+
+    &:hover {
+        background-color: rgb(117,117,117);
+    }
+}
+
+.site-video {
+    position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.site-no-margin {
+    margin: 0 !important;
+}
+
+.site-no-margin-left {
+    margin-left: 0px !important;
+}
+
+.site-no-margin-right {
+    margin-right: 0px !important;
+}
+
+.site-no-margin-top {
+    margin-top: 0px !important;
+}
+
+.site-no-margin-bottom {
+    margin-bottom: 0px !important;
+}
+
+.site-no-pad {
+    padding: 0 !important;
+}
+
+.site-no-pad-left {
+    padding-left: 0 !important;
+}
+
+.site-no-pad-right {
+    padding-right: 0 !important;
+}
+
+.site-no-pad-top {
+    padding-top: 0 !important;
+}
+
+.site-no-pad-bottom {
+    padding-bottom: 0 !important;
+}
+
+.site-pad-left {
+    padding-left: 20px;
+}
+
+.site-pad-left-x2 {
+    padding-left: 40px;
+}
+
+.site-pad-left-sm {
+    padding-left: 10px;
+}
+
+.site-pad-right {
+    padding-right: 20px;
+}
+
+.site-pad-right-x2 {
+    padding-right: 40px;
+}
+
+.site-pad-right-sm {
+    padding-right: 10px;
+}
+
+.site-pad-top {
+    padding-top: 20px;
+}
+
+.site-pad-top-x2 {
+    padding-top: 40px;
+}
+
+.site-pad-top-sm {
+    padding-top: 10px;
+}
+
+.site-pad-bottom {
+    padding-bottom: 20px;
+}
+
+.site-pad-bottom-x2 {
+    padding-bottom: 40px;
+}
+
+.site-pad-bottom-sm {
+    padding-bottom: 10px;
 }

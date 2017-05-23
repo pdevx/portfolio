@@ -8,6 +8,12 @@ pdevx.filter('capitalize', function () {
     };
 });
 
+pdevx.filter('trusted', ['$sce', function ($sce) {
+    return function(url) {
+        return $sce.trustAsResourceUrl(url);
+    };
+}]);
+
 pdevx.config(["$translateProvider", function ($translateProvider) {
     $translateProvider.translations("developer", {});
 }]);
