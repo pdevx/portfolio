@@ -2,4 +2,13 @@
     md-toolbar.site-toolbar 
         h1.md-headline {{ "EXPERIENCE" | translate | uppercase }}
     md-content
-        p(layout-padding="") Coming soon
+        div(ng-repeat="job in vm.jobs", layout="column")
+            md-card
+                md-card-title.md-headline {{ job.company }}
+                span.site-pad-left {{ job.location }}
+                span.site-pad-left {{ job.position }}
+                md-card-content
+                    span(ng-repeat="duty in job.duties") {{ duty }}
+
+
+        

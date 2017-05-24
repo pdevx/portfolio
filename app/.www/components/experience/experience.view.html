@@ -3,6 +3,11 @@
         <h1 class="md-headline">{{ "EXPERIENCE" | translate | uppercase }}</h1>
     </md-toolbar>
     <md-content>
-        <p layout-padding="">Coming soon</p>
+        <div ng-repeat="job in vm.jobs" layout="column">
+            <md-card>
+                <md-card-title class="md-headline">{{ job.company }}</md-card-title><span class="site-pad-left">{{ job.location }}</span><span class="site-pad-left">{{ job.position }}</span>
+                <md-card-content><span ng-repeat="duty in job.duties">{{ duty }}</span></md-card-content>
+            </md-card>
+        </div>
     </md-content>
 </div>
