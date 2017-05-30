@@ -2,7 +2,16 @@
     <md-toolbar class="site-toolbar">
         <h1 class="md-headline">{{ "EXAMPLES" | translate | uppercase }}</h1>
     </md-toolbar>
-    <md-content>
-        <p layout-padding="">Coming soon</p>
+    <md-content layout-wrap="" layout="row" layout-gt-sm="row">
+        <div ng-repeat="project in vm.projects" layout="column" flex-gt-md="50" flex="100">
+            <md-card><img/>
+                <md-card-title layout="row">
+                    <md-card-title-text flex="50"><span class="md-headline">{{ project.company }}</span><span class="md-subhead">{{ project.position }} / {{ project.location }}</span><span class="md-subhead">{{ project.dates }}</span></md-card-title-text>
+                    <md-card-title-media flex="50"
+                        layout="row" layout-padding="" layout-align="end center"><img ng-src="{{ project.img }}" width="100%" height="auto" style="max-width:300px;" /></md-card-title-media>
+                </md-card-title>
+                <md-card-content></md-card-content>
+            </md-card>
+        </div>
     </md-content>
 </div>

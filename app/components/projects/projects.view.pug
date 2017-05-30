@@ -1,0 +1,15 @@
+.md-whiteframe-z2
+    md-toolbar.site-toolbar 
+        h1.md-headline {{ "EXAMPLES" | translate | uppercase }}
+    md-content(layout-wrap="", layout="row", layout-gt-sm="row")
+        div(ng-repeat="project in vm.projects", layout="column", flex-gt-md="50", flex="100")
+            md-card
+                img
+                md-card-title(layout="row")
+                    md-card-title-text(flex="50")
+                        span.md-headline {{ project.company }}
+                        span.md-subhead {{ project.position }} / {{ project.location }}
+                        span.md-subhead {{ project.dates }}
+                    md-card-title-media(flex="50", layout="row", layout-padding="", layout-align="end center")
+                        img(ng-src="{{ project.img }}", width="100%", height="auto", style="max-width:300px;")
+                md-card-content
