@@ -1,3 +1,3 @@
-var pdevxExamples = angular.module('pdevx.examples', [
-    'examples.controller'
+var pdevxProjects = angular.module('pdevx.projects', [
+    'projects.controller'
 ]);

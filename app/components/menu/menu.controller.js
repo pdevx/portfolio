@@ -17,8 +17,8 @@ menuController.controller('menuController', function ($mdMedia, $mdSidenav) {
             icon: 'chat'
         },
         {
-            link: '#!/app/examples',
-            title: "EXAMPLES",
+            link: '#!/app/projects',
+            title: "PROJECTS",
             icon: 'code'
         },
         {

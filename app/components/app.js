@@ -1,6 +1,6 @@
 var angular = require('angular');
 
-var pdevx = angular.module('pdevx', [require('angular-animate'), require('angular-cookies'), require('angular-material'), require('angular-material-icons'), require('angular-messages'), require('angular-storage'), require('angular-translate'), require('angular-ui-router'), 'pdevx.about', 'pdevx.contact', 'pdevx.examples', 'pdevx.experience', 'pdevx.main', 'pdevx.menu', 'pdevx.music', 'pdevx.youtube', 'templates', 'translations']);
+var pdevx = angular.module('pdevx', [require('angular-animate'), require('angular-cookies'), require('angular-material'), require('angular-material-icons'), require('angular-messages'), require('angular-storage'), require('angular-translate'), require('angular-ui-router'), 'pdevx.about', 'pdevx.contact', 'pdevx.projects', 'pdevx.experience', 'pdevx.main', 'pdevx.menu', 'pdevx.music', 'pdevx.youtube', 'templates', 'translations']);
 
 pdevx.filter('capitalize', function () {
     return function (token) {
@@ -112,12 +112,12 @@ pdevx.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
 
-        .state('app.main.examples', {
-            url: '/examples',
+        .state('app.main.projects', {
+            url: '/projects',
             views: {
                 'mainContent': {
-                    templateUrl: 'components/examples/examples.view.html',
-                    controller: 'examplesController as vm'
+                    templateUrl: 'components/projects/projects.view.html',
+                    controller: 'projectsController as vm'
                 }
             }
         })
