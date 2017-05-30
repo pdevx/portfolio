@@ -6,6 +6,7 @@ experienceController.controller('experienceController', function () {
     vm.jobs = [
         {
             company: "FX Global, Inc.",
+            img: "assets/img/fx_logo.gif",
             location: "Tualatin, OR",
             position: "Web Application Developer",
             dates: "JUNE 2016 – PRESENT",
@@ -19,6 +20,7 @@ experienceController.controller('experienceController', function () {
         },
         {
             company: "NAVEX Global",
+            img: "assets/img/navex_logo.png",
             location: "Lake Oswego, OR",
             position: "Web Developer",
             dates: "JUNE 2015 – JUNE 2016",
@@ -32,6 +34,7 @@ experienceController.controller('experienceController', function () {
         },
         {
             company: "Axis Clinical Software",
+            img: "assets/img/axis_logo.png",
             location: "Portland, OR",
             position: "Junior Software Engineer",
             dates: "SEPTEMBER 2014 – JUNE 2015",
@@ -44,6 +47,7 @@ experienceController.controller('experienceController', function () {
         },
         {
             company: "The Tech Academy",
+            img: "assets/img/tech_academy_logo.png",
             location: "Portland, OR",
             position: "Software Development Student",
             dates: "JUNE 2014 – SEPTEMBER 2014",
