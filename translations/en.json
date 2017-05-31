@@ -1,6 +1,9 @@
 {
   "ABOUT": "About",
-  "ABOUT_TEXT": "Determined Software Developer with an aptitude for problem solving, a passion for technology, and the tenacity to overcome challenges. Experience building web applications using Angular, Node, AWS, HTML, Javascript and CSS.",
+  "ABOUT_ABOUT_ME": "About Me",
+  "ABOUT_LINKS": "Links",
+  "ABOUT_SKILLS": "Skills",
+  "ABOUT_TEXT": "I'm determined Software Developer with an aptitude for problem solving, a passion for technology, and the tenacity to overcome challenges. I have experience building web applications using Angular, Node, AWS, HTML, Javascript and CSS.",
   "CONTACT": "Contact",
   "EXPERIENCE": "Experience",
   "LINKS": "Links",

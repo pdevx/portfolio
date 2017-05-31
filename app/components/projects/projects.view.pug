@@ -7,9 +7,6 @@
                 img
                 md-card-title(layout="row")
                     md-card-title-text(flex="50")
-                        span.md-headline {{ project.company }}
-                        span.md-subhead {{ project.position }} / {{ project.location }}
-                        span.md-subhead {{ project.dates }}
-                    md-card-title-media(flex="50", layout="row", layout-padding="", layout-align="end center")
-                        img(ng-src="{{ project.img }}", width="100%", height="auto", style="max-width:300px;")
+                        span.md-headline {{ project.name }}
+                        span.md-subhead {{ project.company }}
                 md-card-content

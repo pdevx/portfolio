@@ -1,7 +1,7 @@
 .md-whiteframe-z2
     md-content(md-theme="dark")
         img(src="assets/img/youtube_cover.png", width="100%", height="auto")
-        p.site-pad-left(layout-padding="") {{ "YOUTUBE_ABOUT" | translate }}
+        //- p.site-pad-left(layout-padding="") {{ "YOUTUBE_ABOUT" | translate }}
     md-content(layout-wrap="", layout="row", layout-gt-sm="row")
         div(ng-repeat="video in vm.youtubeVideos", flex-gt-sm="50", flex="100")
             md-card

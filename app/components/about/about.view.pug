@@ -1,6 +1,19 @@
 .md-whiteframe-z2
     md-toolbar.site-toolbar 
         h1.md-headline {{ "ABOUT" | translate | uppercase }}
-    md-content(layout="column", layout-padding="")
-        p {{ "ABOUT_TEXT" | translate }}
-        a(ng-repeat="link in vm.links", ng-href="{{ link }}", target="_blank") {{ link }}
+    md-content(md-theme="dark", layout="column", layout-gt-md="row")
+        .site-pad(flex="30", layout="column", layout-align="start center")
+            img.site-img-circle.site-pad-bottom(src="assets/img/me.JPG", width="80%", height="auto", style="max-width:250px;")
+            span(ng-repeat="(key, value)  in vm.bio") {{ key }}: {{ value }}
+        md-content.site-pad(md-theme="default", layout="column", flex="70")
+            div
+                h4.site-no-margin {{ "ABOUT_ABOUT_ME" | translate }}
+                p.site-no-margin {{ "ABOUT_TEXT" | translate }}
+            div(layout="column")
+                h4.site-no-margin-bottom {{ "ABOUT_LINKS" | translate }}
+                a(ng-repeat="link in vm.links", ng-href="{{ link }}", target="_blank") {{ link }}
+            div
+                h4.site-no-margin-bottom {{ "ABOUT_SKILLS" | translate }}
+                md-chips(ng-model="vm.skills", readonly="true", md-removable="false")
+                    md-chip-template
+                        span {{$chip}}

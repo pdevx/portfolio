@@ -17,14 +17,14 @@ menuController.controller('menuController', function ($mdMedia, $mdSidenav) {
             icon: 'chat'
         },
         {
-            link: '#!/app/projects',
-            title: "PROJECTS",
-            icon: 'code'
-        },
-        {
             link: '#!/app/experience',
             title: "EXPERIENCE",
             icon: 'business'
+        },
+        {
+            link: '#!/app/projects',
+            title: "PROJECTS",
+            icon: 'code'
         },
         {
             link: '#!/app/music',
