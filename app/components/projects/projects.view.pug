@@ -3,10 +3,13 @@
         h1.md-headline {{ "PROJECTS" | translate | uppercase }}
     md-content(layout-wrap="", layout="row", layout-gt-sm="row")
         div(ng-repeat="project in vm.projects", layout="column", flex-gt-md="50", flex="100")
-            md-card
-                img
-                md-card-title(layout="row")
-                    md-card-title-text(flex="50")
-                        span.md-headline {{ project.name }}
-                        span.md-subhead {{ project.company }}
-                md-card-content
+            md-card(layout="column", layout-gt-sm="row")
+                div(flex="100", flex-gt-sm="30", layout-padding="", layout="row", layout-align="center start", style="min-width:150px;")
+                    img.site-img-circle(src="{{ project.img }}", width="100%", height="auto", style="max-width:250px;")
+                .site-pad-left(flex="100", flex-gt-sm="70")
+                    md-card-title(layout="row")
+                        md-card-title-text
+                            span.md-headline {{ project.name }}
+                            span.md-subhead {{ project.company }} 
+                    md-card-content
+                        p {{ project.description }}

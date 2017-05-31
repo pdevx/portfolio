@@ -2,5 +2,12 @@
     <md-toolbar class="site-toolbar">
         <h1 class="md-headline">{{ "CONTACT" | translate | uppercase }}</h1>
     </md-toolbar>
-    <md-content layout="column" layout-padding=""><span>6215 SW Vinwood Ter</span><span>Beaverton, OR 97078</span><span>503-709-2421</span><span>jameskaeohester@gmail.com</span></md-content>
+    <md-content layout="column" layout-padding="">
+        <div layout="row">
+            <ng-md-icon class="site-grey" icon="home"></ng-md-icon><span class="site-pad-left">6215 SW Vinwood Ter, Beaverton, OR 97078</span></div>
+        <div layout="row">
+            <ng-md-icon class="site-grey" icon="phone"></ng-md-icon><span class="site-pad-left">503-709-2421</span></div>
+        <div layout="row">
+            <ng-md-icon class="site-grey" icon="email"></ng-md-icon><span class="site-pad-left">jameskaeohester@gmail.com</span></div>
+    </md-content>
 </div>

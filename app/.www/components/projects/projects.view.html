@@ -4,11 +4,16 @@
     </md-toolbar>
     <md-content layout-wrap="" layout="row" layout-gt-sm="row">
         <div ng-repeat="project in vm.projects" layout="column" flex-gt-md="50" flex="100">
-            <md-card><img/>
-                <md-card-title layout="row">
-                    <md-card-title-text flex="50"><span class="md-headline">{{ project.name }}</span><span class="md-subhead">{{ project.company }}</span></md-card-title-text>
-                </md-card-title>
-                <md-card-content></md-card-content>
+            <md-card layout="column" layout-gt-sm="row">
+                <div flex="100" flex-gt-sm="30" layout-padding="" layout="row" layout-align="center start" style="min-width:150px;"><img class="site-img-circle" src="{{ project.img }}" width="100%" height="auto" style="max-width:250px;" /></div>
+                <div class="site-pad-left" flex="100" flex-gt-sm="70">
+                    <md-card-title layout="row">
+                        <md-card-title-text><span class="md-headline">{{ project.name }}</span><span class="md-subhead">{{ project.company }} </span></md-card-title-text>
+                    </md-card-title>
+                    <md-card-content>
+                        <p>{{ project.description }}</p>
+                    </md-card-content>
+                </div>
             </md-card>
         </div>
     </md-content>

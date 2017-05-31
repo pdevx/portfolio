@@ -2,7 +2,12 @@
     md-toolbar.site-toolbar 
         h1.md-headline {{ "CONTACT" | translate | uppercase }}
     md-content(layout="column", layout-padding="")
-        span 6215 SW Vinwood Ter
-        span Beaverton, OR 97078
-        span 503-709-2421
-        span jameskaeohester@gmail.com
+        div(layout="row")
+            ng-md-icon.site-grey(icon='home')
+            span.site-pad-left 6215 SW Vinwood Ter, Beaverton, OR 97078
+        div(layout="row")
+            ng-md-icon.site-grey(icon='phone')
+            span.site-pad-left 503-709-2421
+        div(layout="row")
+            ng-md-icon.site-grey(icon='email')
+            span.site-pad-left jameskaeohester@gmail.com

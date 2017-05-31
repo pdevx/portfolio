@@ -11,6 +11,11 @@
     font-weight: bold;
 }
 
+.site-grey {
+    color: #424242 !important;
+    fill: #424242 !important;
+}
+
 .site-toolbar {
     padding: 0 1em;
 }
