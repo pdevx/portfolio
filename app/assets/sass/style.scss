@@ -10,6 +10,10 @@
     font-weight: bold;
 }
 
+.site-blue {
+    color: rgb(16,108,200)  !important;
+    fill: rgb(16,108,200)  !important;
+}
 .site-grey {
     color: #424242  !important;
     fill: #424242  !important;
@@ -30,7 +34,10 @@
 }
 
 .site-sidenav {
-    background: #424242 !important;
+    width: 272px;
+    min-width: 272px;
+    max-width: 272px;
+    background: rgb(16,108,200)  !important;
     color: #f6f6f6 !important;
     a{
         color: #f6f6f6;
@@ -60,7 +67,7 @@
     transition: background-color 0.5s ease;
 
     &:hover {
-        background-color: rgb(117,117,117);
+        background-color: #267ED5;
     }
 }
 

@@ -2,7 +2,35 @@
     <md-toolbar class="site-toolbar">
         <h1 class="md-headline">{{ "PROJECTS" | translate | uppercase }} > {{ "PROJECTS_ETHICSPOINT" | translate }}</h1>
     </md-toolbar>
-    <md-content layout-wrap="" layout="row" layout-gt-sm="row">
-        <p class="site-pad-left">More information coming soon...</p>
+    <md-content class="site-pad" md-theme="dark" layout="column">
+        <div layout="column" layout-gt-sm="row">
+            <div flex="100" flex-gt-sm="30" layout-padding="" layout="row" layout-align="center start" style="min-width:150px;"><img class="site-img-circle" src="{{ vm.ethicsPointData.img }}" width="100%" height="auto" style="max-width:250px;" /></div>
+            <div class="site-pad-left" flex="100" flex-gt-sm="70" layout="column"><span class="md-headline">{{ vm.ethicsPointData.name }}</span><span class="md-subhead">{{ vm.ethicsPointData.company }} </span>
+                <p>{{ vm.ethicsPointData.description }}</p>
+                <div flex=""></div>
+                <div layout="row" layout-align="end end">
+                    <md-button class="md-raised md-primary" ng-click="vm.back()">{{ "BACK" | translate }}</md-button>
+                </div>
+            </div>
+        </div>
+        <div class="site-pad-top" layout-wrap="" layout="row" layout-gt-sm="row">
+            <div ng-repeat="feature in vm.ethicsPointData.features" layout="column" flex-gt-md="50" flex="100">
+                <md-card class="site-no-pad" md-theme="default" layout="column" layout-gt-sm="row">
+                    <div flex="100" flex-gt-sm="50" layout="row" layout-align="center start" style="min-width:150px;"><img src="{{ feature.img }}" width="100%" height="auto" /></div>
+                    <div class="site-pad-left" flex="100" flex-gt-sm="50">
+                        <md-card-title layout="row">
+                            <md-card-title-text><span class="md-headline">{{ feature.title }}</span></md-card-title-text>
+                        </md-card-title>
+                        <md-card-content layout="column" flex="">
+                            <p>{{ feature.description }}</p>
+                            <div flex=""></div>
+                            <div layout="row" layout-align="end end">
+                                <md-button class="md-raised md-accent" ng-click="vm.redirect(feature.link)">{{ "VISIT_SITE" | translate }}</md-button>
+                            </div>
+                        </md-card-content>
+                    </div>
+                </md-card>
+            </div>
+        </div>
     </md-content>
 </div>
