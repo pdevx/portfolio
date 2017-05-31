@@ -1,6 +1,6 @@
 .md-whiteframe-z2
     md-toolbar.site-toolbar 
-        h1.md-headline {{ "PROJECTS" | translate | uppercase }}  >  {{ "PROJECTS_ETHICSPOINT" | translate }}
+        h1.md-headline {{ "PROJECTS" | translate | uppercase }}  >  {{ "PROJECTS_CLOUD_CONNECT" | translate }}
     md-content.site-pad(md-theme="dark", layout="column")
         div(layout="column", layout-gt-sm="row")
             div(flex="100", flex-gt-sm="30", layout-padding="", layout="row", layout-align="center start", style="min-width:150px;")
@@ -23,6 +23,3 @@
                                 span.md-headline {{ feature.title }}
                         md-card-content(layout="column", flex="")
                             p {{ feature.description }}
-                            div(flex="")
-                            div(layout="row", layout-align="end end")
-                                md-button.md-raised.md-accent(ng-click="vm.redirect(feature.link)") {{ "VISIT_SITE" | translate }}
