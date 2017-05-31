@@ -10,8 +10,12 @@
                     <md-card-title layout="row">
                         <md-card-title-text><span class="md-headline">{{ project.name }}</span><span class="md-subhead">{{ project.company }} </span></md-card-title-text>
                     </md-card-title>
-                    <md-card-content>
+                    <md-card-content layout="column" flex="">
                         <p>{{ project.description }}</p>
+                        <div flex=""></div>
+                        <div layout="row" layout-align="end end">
+                            <md-button class="md-raised md-accent" ng-click="vm.navigate(project.link)">{{ "LEARN_MORE" | translate }}</md-button>
+                        </div>
                     </md-card-content>
                 </div>
             </md-card>

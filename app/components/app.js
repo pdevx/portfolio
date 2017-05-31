@@ -122,6 +122,36 @@ pdevx.config(function ($stateProvider, $urlRouterProvider) {
             }
         })
 
+        .state('app.main.projects-cloud-connect', {
+            url: '/projects/cloud-connect',
+            views: {
+                'mainContent': {
+                    templateUrl: 'components/projects/cloud-connect/projects.cloud-connect.view.html',
+                    controller: 'projectsCloudConnectController as vm'
+                }
+            }
+        })
+
+        .state('app.main.projects-ethicspoint', {
+            url: '/projects/ethicspoint',
+            views: {
+                'mainContent': {
+                    templateUrl: 'components/projects/ethicspoint/projects.ethicspoint.view.html',
+                    controller: 'projectsEthicsPointController as vm'
+                }
+            }
+        })
+
+        .state('app.main.projects-pats', {
+            url: '/projects/pats',
+            views: {
+                'mainContent': {
+                    templateUrl: 'components/projects/pats/projects.pats.view.html',
+                    controller: 'projectsPatsController as vm'
+                }
+            }
+        })
+
         .state('app.main.experience', {
             url: '/experience',
             views: {

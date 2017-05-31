@@ -11,5 +11,8 @@
                         md-card-title-text
                             span.md-headline {{ project.name }}
                             span.md-subhead {{ project.company }} 
-                    md-card-content
+                    md-card-content(layout="column", flex="")
                         p {{ project.description }}
+                        div(flex="")
+                        div(layout="row", layout-align="end end")
+                            md-button.md-raised.md-accent(ng-click="vm.navigate(project.link)") {{ "LEARN_MORE" | translate }}

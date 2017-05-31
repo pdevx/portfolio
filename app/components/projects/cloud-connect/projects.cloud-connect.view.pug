@@ -1,12 +1,5 @@
 .md-whiteframe-z2
     md-toolbar.site-toolbar 
-        h1.md-headline {{ "PROJECTS" | translate | uppercase }} > {{ "PROJECTS_CLOUD_CONNECT" | translate }}
+        h1.md-headline {{ "PROJECTS" | translate | uppercase }}  >  {{ "PROJECTS_CLOUD_CONNECT" | translate }}
     md-content(layout-wrap="", layout="row", layout-gt-sm="row")
-        div(ng-repeat="project in vm.projects", layout="column", flex-gt-md="50", flex="100")
-            md-card
-                img
-                md-card-title(layout="row")
-                    md-card-title-text(flex="50")
-                        span.md-headline {{ project.name }}
-                        span.md-subhead {{ project.company }}
-                md-card-content
+        p.site-pad-left More information coming soon...
